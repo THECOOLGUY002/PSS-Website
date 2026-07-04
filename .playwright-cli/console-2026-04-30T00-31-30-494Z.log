@@ -1,0 +1,6 @@
+[     119ms] TypeError: Cannot read properties of null (reading 'classList')
+    at updateChrome (http://127.0.0.1:4173/app.js:71:10)
+    at http://127.0.0.1:4173/app.js:98:1
+[     949ms] TypeError: Cannot read properties of null (reading 'classList')
+    at updateChrome (http://127.0.0.1:4173/app.js:71:10)
+    at http://127.0.0.1:4173/app.js:80:5

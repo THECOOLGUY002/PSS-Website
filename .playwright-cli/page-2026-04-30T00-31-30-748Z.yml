@@ -1,0 +1,65 @@
+- generic [active] [ref=e1]:
+  - img [ref=e3]
+  - generic [ref=e23]:
+    - paragraph [ref=e24]: Buyer-ready interiors with a calm, polished finish.
+    - link "View services" [ref=e25] [cursor=pointer]:
+      - /url: "#services"
+  - region "Studio introduction" [ref=e27]:
+    - paragraph [ref=e29]: Buyer-ready rooms. Styled for the first inspection.
+    - generic [ref=e31]:
+      - generic [ref=e32]: Staging
+      - generic [ref=e33]: Cosmetic renovation
+      - generic [ref=e34]: Furniture hire
+      - generic [ref=e35]: Pre-sale presentation
+      - generic [ref=e36]: Melbourne
+      - generic [ref=e37]: Staging
+      - generic [ref=e38]: Cosmetic renovation
+      - generic [ref=e39]: Furniture hire
+      - generic [ref=e40]: Pre-sale presentation
+      - generic [ref=e41]: Melbourne
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - paragraph [ref=e44]: Services
+      - heading "One studio. Every visible detail." [level=2] [ref=e45]
+    - generic [ref=e46]:
+      - article [ref=e47]:
+        - figure [ref=e48]:
+          - img "Elegant staged bedroom with layered linen bedding and modern neutral styling" [ref=e49]
+        - generic [ref=e50]:
+          - generic [ref=e51]: "01"
+          - heading "Property staging" [level=3] [ref=e52]
+          - paragraph [ref=e53]: Furniture, art, linen and finishing details composed for photography, inspections and buyer memory.
+      - article [ref=e54]:
+        - figure [ref=e55]:
+          - img "Modern renovated kitchen and dining interior with stone benchtop and warm timber floor" [ref=e56]
+        - generic [ref=e57]:
+          - generic [ref=e58]: "02"
+          - heading "Cosmetic renovation" [level=3] [ref=e59]
+          - paragraph [ref=e60]: High-impact updates for tired surfaces, layouts and details before the property reaches market.
+      - article [ref=e61]:
+        - figure [ref=e62]:
+          - img "Modern bathroom and hallway renovation detail with stone, timber and charcoal fixtures" [ref=e63]
+        - generic [ref=e64]:
+          - generic [ref=e65]: "03"
+          - heading "Pre-sale presentation" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Styling direction, repairs, visual priorities and final touches aligned into a single sale-ready presentation.
+  - generic [ref=e68]:
+    - generic [ref=e69]:
+      - img "Elegant staged living room project placeholder" [ref=e70]
+      - generic [ref=e71]:
+        - generic [ref=e72]: Projects
+        - strong [ref=e73]: Portfolio coming soon
+    - paragraph [ref=e75]: Selected transformations will be added here when the new portfolio is ready.
+  - generic [ref=e76]:
+    - img "Elegant renovation detail" [ref=e78]
+    - generic [ref=e79]:
+      - paragraph [ref=e80]: Contacts
+      - heading "Prepare the property before the market sees it." [level=2] [ref=e81]
+      - generic [ref=e82]:
+        - link "info@propertystylesystem.com.au" [ref=e83] [cursor=pointer]:
+          - /url: mailto:info@propertystylesystem.com.au
+        - link "propertystylesystem.com.au" [ref=e84] [cursor=pointer]:
+          - /url: https://propertystylesystem.com.au
+  - contentinfo [ref=e85]:
+    - img "Property Style System logo" [ref=e86]
+    - generic [ref=e87]: Melbourne staging and renovation
