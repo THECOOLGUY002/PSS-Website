@@ -140,7 +140,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contacts</a>
       </nav>
-      <a class="nav-cta" href="#contact">Enquire</a>
+      <a class="nav-cta" href="#contact">Book free assessment</a>
     </header>
 
     <main>
@@ -189,6 +189,42 @@
             Buyer-ready rooms. <span class="orange">Styled</span> for the first
             inspection.
           </p>
+        </div>
+      </section>
+
+      <section
+        class="proof-decision section"
+        aria-label="Proof and pre-sale decisions"
+        data-section
+      >
+        <div class="proof-decision-inner reveal">
+          <div class="proof-decision-copy">
+            <p class="eyebrow">Proof + decision</p>
+            <h2>What PSS notices, changes, and prepares before sale.</h2>
+          </div>
+          <div class="proof-decision-list">
+            <article>
+              <span>Notices</span>
+              <p>
+                First-impression gaps, tired finishes, awkward flow, weak focal
+                points and details buyers remember.
+              </p>
+            </article>
+            <article>
+              <span>Changes</span>
+              <p>
+                Targeted updates that improve presentation, from cosmetic
+                repairs to styling, lighting and layout priorities.
+              </p>
+            </article>
+            <article>
+              <span>Prepares</span>
+              <p>
+                Rooms, surfaces and campaign angles for photography,
+                inspections and buyer comparison.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -324,21 +360,31 @@
       </section>
 
       <section class="projects section" id="projects" data-section>
-        <div class="projects-visual reveal">
-          <img
-            src="assets/images/hero-living.png"
-            alt="Elegant staged living room project placeholder"
-          />
-          <div class="project-status">
-            <span>Projects</span>
-            <strong>Portfolio coming soon</strong>
+        <div class="project-story reveal">
+          <div class="project-story-copy">
+            <p class="eyebrow">Transformation</p>
+            <h2>From empty room to buyer-ready living.</h2>
+            <p>
+              A tired front room becomes a warm, styled living space with clear
+              scale, stronger focal points and a softer path into the home.
+            </p>
           </div>
-        </div>
-        <div class="project-note reveal">
-          <p>
-            Selected transformations will be added here when the new portfolio
-            is ready.
-          </p>
+          <div class="project-before-after">
+            <figure>
+              <img
+                src="assets/images/before-living.png"
+                alt="Empty living room before styling with bare timber floors and dated blinds"
+              />
+              <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/images/hero-living.png"
+                alt="Styled living room after transformation with sofa, artwork, rug and dining area"
+              />
+              <figcaption>After</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -351,15 +397,54 @@
         </div>
         <div class="contact-panel reveal">
           <p class="eyebrow">Contacts</p>
-          <h2>Prepare the property before the market sees it.</h2>
+          <h2>Book a free pre-sale assessment.</h2>
+          <p class="contact-intro">
+            Tell us the property type, suburb and sale timing. We will contact
+            you within one business day.
+          </p>
           <div class="contact-actions">
+            <a class="contact-primary" href="tel:1300523223">1300 523 223</a>
             <a href="mailto:info@propertystylesystem.com.au"
               >info@propertystylesystem.com.au</a
             >
-            <a href="https://propertystylesystem.com.au" rel="noreferrer"
-              >propertystylesystem.com.au</a
-            >
           </div>
+          <form
+            class="contact-form"
+            action="mailto:info@propertystylesystem.com.au"
+            method="post"
+            enctype="text/plain"
+          >
+            <label>
+              Name
+              <input name="Name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="Email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Phone
+              <input name="Phone" type="tel" autocomplete="tel" />
+            </label>
+            <label>
+              Service
+              <select name="Service">
+                <option>Pre-sale assessment</option>
+                <option>Property staging</option>
+                <option>Cosmetic renovation</option>
+                <option>Presentation advice</option>
+              </select>
+            </label>
+            <label class="contact-message">
+              Property notes
+              <textarea
+                name="Property notes"
+                rows="4"
+                placeholder="Suburb, property type, sale timing"
+              ></textarea>
+            </label>
+            <button type="submit">Book free assessment</button>
+          </form>
         </div>
       </section>
     </main>
