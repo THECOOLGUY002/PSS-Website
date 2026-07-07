@@ -7,8 +7,7 @@ Source inspected: current working tree in `index.html`, `favicon.svg`, `styles.c
 Assumptions:
 - "Edible" was interpreted as "editable."
 - A text slot means visible website copy, SEO copy, accessibility labels, image alt text, form labels/options/placeholders, and asset text that ships with the website.
-- Decorative empty alt attributes, SVG path data, CSS empty `content: ""`, and JavaScript variable names are excluded.
-- `index.html` and `styles.css` already had uncommitted changes before this report was created, so this report reflects the current working tree, not the last committed version.
+- Decorative empty alt attributes, SVG path data, CSS empty `content: ""`, JavaScript variable names, README text, and screenshot/output artifacts are excluded.
 
 ## Metadata And Accessibility
 
@@ -120,44 +119,36 @@ Assumptions:
 | PSS-TEXT-064 | `index.html:365` | Transformation |  |
 | PSS-TEXT-065 | `index.html:366` | From empty room to buyer-ready living. |  |
 | PSS-TEXT-066 | `index.html:367-369` | A tired front room becomes a warm, styled living space with clear scale, stronger focal points and a softer path into the home. |  |
-| PSS-TEXT-067 | `index.html:377` | Empty living room before styling with bare timber floors and dated blinds |  |
-| PSS-TEXT-068 | `index.html:379` | Before |  |
-| PSS-TEXT-069 | `index.html:384` | Styled living room after transformation with sofa, artwork, rug and dining area |  |
-| PSS-TEXT-070 | `index.html:386` | After |  |
-| PSS-TEXT-071 | `index.html:390` | Case study |  |
-| PSS-TEXT-072 | `index.html:391` | Visual proof before the campaign goes live. |  |
-| PSS-TEXT-073 | `index.html:394` | Before |  |
-| PSS-TEXT-074 | `index.html:395` | Vacant scale, dated blinds and no clear lifestyle cue. |  |
-| PSS-TEXT-075 | `index.html:398` | Decision |  |
-| PSS-TEXT-076 | `index.html:399` | Warm living layout, art, rug and dining sightline. |  |
-| PSS-TEXT-077 | `index.html:402` | Result |  |
-| PSS-TEXT-078 | `index.html:403` | Stronger listing imagery and a clearer first-inspection read. |  |
+| PSS-TEXT-067 | `index.html:376` | Empty living room before styling with bare timber floors and dated blinds |  |
+| PSS-TEXT-068 | `index.html:378` | Before |  |
+| PSS-TEXT-069 | `index.html:383` | Styled living room after transformation with sofa, artwork, rug and dining area |  |
+| PSS-TEXT-070 | `index.html:385` | After |  |
 
 ## Contact
 
 | ID | Source | Current text | Editable text |
 |---|---|---|---|
-| PSS-TEXT-079 | `index.html:415` | Elegant renovation detail |  |
-| PSS-TEXT-080 | `index.html:419` | Contacts |  |
-| PSS-TEXT-081 | `index.html:420` | Book a free pre-sale assessment. |  |
-| PSS-TEXT-082 | `index.html:421-423` | Tell us the property type, suburb and sale timing. We will contact you within one business day. |  |
-| PSS-TEXT-083 | `index.html:426` | 1300 523 223 |  |
-| PSS-TEXT-084 | `index.html:427-428` | info@propertystylesystem.com.au |  |
-| PSS-TEXT-085 | `index.html:438` | Name |  |
-| PSS-TEXT-086 | `index.html:442` | Email |  |
-| PSS-TEXT-087 | `index.html:446` | Phone |  |
-| PSS-TEXT-088 | `index.html:450` | Service |  |
-| PSS-TEXT-089 | `index.html:452` | Pre-sale assessment |  |
-| PSS-TEXT-090 | `index.html:453` | Property staging |  |
-| PSS-TEXT-091 | `index.html:454` | Cosmetic renovation |  |
-| PSS-TEXT-092 | `index.html:455` | Presentation advice |  |
-| PSS-TEXT-093 | `index.html:459` | Property notes |  |
-| PSS-TEXT-094 | `index.html:463` | Suburb, property type, sale timing |  |
-| PSS-TEXT-095 | `index.html:466` | Book free assessment |  |
+| PSS-TEXT-071 | `index.html:395` | Elegant renovation detail |  |
+| PSS-TEXT-072 | `index.html:399` | Contacts |  |
+| PSS-TEXT-073 | `index.html:400` | Book a free pre-sale assessment. |  |
+| PSS-TEXT-074 | `index.html:401-403` | Tell us the property type, suburb and sale timing. We will contact you within one business day. |  |
+| PSS-TEXT-075 | `index.html:406` | 1300 523 223 |  |
+| PSS-TEXT-076 | `index.html:407-408` | info@propertystylesystem.com.au |  |
+| PSS-TEXT-077 | `index.html:418` | Name |  |
+| PSS-TEXT-078 | `index.html:422` | Email |  |
+| PSS-TEXT-079 | `index.html:426` | Phone |  |
+| PSS-TEXT-080 | `index.html:430` | Service |  |
+| PSS-TEXT-081 | `index.html:432` | Pre-sale assessment |  |
+| PSS-TEXT-082 | `index.html:433` | Property staging |  |
+| PSS-TEXT-083 | `index.html:434` | Cosmetic renovation |  |
+| PSS-TEXT-084 | `index.html:435` | Presentation advice |  |
+| PSS-TEXT-085 | `index.html:439` | Property notes |  |
+| PSS-TEXT-086 | `index.html:443` | Suburb, property type, sale timing |  |
+| PSS-TEXT-087 | `index.html:446` | Book free assessment |  |
 
 ## Footer
 
 | ID | Source | Current text | Editable text |
 |---|---|---|---|
-| PSS-TEXT-096 | `index.html:475` | Property Style System logo |  |
-| PSS-TEXT-097 | `index.html:477` | Melbourne staging and renovation |  |
+| PSS-TEXT-088 | `index.html:455` | Property Style System logo |  |
+| PSS-TEXT-089 | `index.html:457` | Melbourne staging and renovation |  |
