@@ -6,6 +6,9 @@ const reveals = document.querySelectorAll(".reveal");
 const heroTitleWords = document.querySelectorAll(".hero-title-word");
 const heroSection = document.querySelector("[data-hero-scroll]");
 const heroFrame = document.querySelector("[data-hero-frame]");
+const heroNarrativeItems = document.querySelectorAll(
+  "[data-hero-narrative-state]",
+);
 const processSection = document.querySelector("[data-process-scroll]");
 const processTrack = document.querySelector("[data-process-track]");
 const introStats = document.querySelector("[data-intro-stats]");
@@ -30,6 +33,12 @@ const titleRevealTargets = document.querySelectorAll(
 const frameCount = 91;
 const frameBase = "assets/video/hero-frames/frame-";
 const frameExtension = ".jpg";
+const heroNarrativeStates = [
+  { id: "assess", start: 0 },
+  { id: "prepare", start: 0.27 },
+  { id: "style", start: 0.52 },
+  { id: "launch", start: 0.78 },
+];
 const clamp = (value, min = 0, max = 1) => Math.min(Math.max(value, min), max);
 const frameSrc = (index) =>
   `${frameBase}${String(index).padStart(3, "0")}${frameExtension}`;
@@ -328,6 +337,54 @@ initRevealAnimations();
 let currentFrame = 1;
 let maxHeroProgress = 0;
 let heroScrollReleased = false;
+let activeHeroNarrativeId = "";
+
+const setHeroNarrativeProgress = (progress) => {
+  if (!heroNarrativeItems.length) return;
+
+  const safeProgress = clamp(progress);
+  const activeState = heroNarrativeStates.reduce(
+    (current, state) => (safeProgress >= state.start ? state : current),
+    heroNarrativeStates[0],
+  );
+
+  if (activeState.id === activeHeroNarrativeId) return;
+
+  activeHeroNarrativeId = activeState.id;
+  const activeIndex = heroNarrativeStates.findIndex(
+    (state) => state.id === activeState.id,
+  );
+
+  heroNarrativeItems.forEach((item) => {
+    const itemIndex = heroNarrativeStates.findIndex(
+      (state) => state.id === item.dataset.heroNarrativeState,
+    );
+    const isActive = item.dataset.heroNarrativeState === activeState.id;
+    const isPast = itemIndex > -1 && itemIndex < activeIndex;
+
+    item.classList.toggle("is-active", isActive);
+    item.classList.toggle("is-past", isPast);
+
+    if (isActive) {
+      item.setAttribute("aria-current", "step");
+    } else {
+      item.removeAttribute("aria-current");
+    }
+
+    if (motionQuery.matches) {
+      gsap.set(item, { autoAlpha: 1, y: 0 });
+      return;
+    }
+
+    gsap.to(item, {
+      autoAlpha: isActive ? 1 : isPast ? 0.72 : 0.48,
+      y: isActive ? 0 : 2,
+      duration: 0.32,
+      ease: "power2.out",
+      overwrite: true,
+    });
+  });
+};
 
 const releaseHeroScroll = () => {
   if (heroScrollReleased) return;
@@ -341,6 +398,7 @@ const setHeroFrameProgress = (progress) => {
   if (document.body.classList.contains("is-loading")) return;
 
   maxHeroProgress = Math.max(maxHeroProgress, progress);
+  setHeroNarrativeProgress(maxHeroProgress);
   const nextFrame = Math.round(1 + maxHeroProgress * (frameCount - 1));
 
   if (nextFrame !== currentFrame) {
